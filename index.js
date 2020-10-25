@@ -7,6 +7,8 @@ const colors = [
   '#795548',
 ];
 
+console.log(colors.length)
+
 
 const refs = {
     startBtn: document.querySelector('button[data-action="start"]'),
@@ -45,7 +47,7 @@ const randomIntegerFromInterval = (min, max) => {
 
 function bodyColorSwatch() {
     refs.bodyElem.style.backgroundColor =
-    colors[randomIntegerFromInterval(0, colors.length - 1)];
+    colors[randomIntegerFromInterval(0, colors.length-1)];
 }
 
 
